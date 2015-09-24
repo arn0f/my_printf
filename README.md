@@ -24,7 +24,7 @@ make
 
 ##Try it
 
-Binary file created is located in *bin/my_printf*. You can execute it as follow:
+Binary file created is located in **bin/my_printf**. You can execute it as follow:
 
 ```
 ./bin/my_printf
@@ -32,36 +32,42 @@ Binary file created is located in *bin/my_printf*. You can execute it as follow:
 
 #Implementation
 
-*printf* function is avalaible on *my_printf.c* file.
+**printf** function is avalaible on **my_printf.c** file.
 
 That implementation is not the perfectest one. Your are free to improve it as you wish.
 
 ##Work 
 
 Function works with:
-*\*
-*char
-*int
-*octal
-*hexadecimal integer
-*upper hexadecimal integer
+<ul>
+<li>*</li>
+<li>char</li>
+<li>int</li>
+<li>octal</li>
+<li>hexadecimal integer</li>
+<li>upper hexadecimal integer</li>
+</ul>
 
 Specifiers:
-*%%
-*%s
-*%S (extended string)
-*%b (binary)
-*%x
-*%X
-*%d && %i
-*%u (unsigned integer)
-*%p
-*%c
-*%o (octal values)
+<ul>
+<li>%%</li>
+<li>%s</li>
+<li>%S (extended string)</li>
+<li>%b (binary)</li>
+<li>%x</li>
+<li>%X</li>
+<li>%d && %i</li>
+<li>%u (unsigned integer)</li>
+<li>%p</li>
+<li>%c</li>
+<li>%o (octal values)</li>
+</ul>
 
 Flags:
-*+
-*-
-*(space)
-*\#
-*0
+<ul>
+<li>+</li>
+<li>-</li>
+<li>(space)</li>
+<li>#</li>
+<li>0</li>
+</ul>
