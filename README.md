@@ -56,7 +56,8 @@ Specifiers:
 <li>%b (binary)</li>
 <li>%x</li>
 <li>%X</li>
-<li>%d && %i</li>
+<li>%d</li>
+<li>%i</li>
 <li>%u (unsigned integer)</li>
 <li>%p</li>
 <li>%c</li>
