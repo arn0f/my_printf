@@ -3,8 +3,8 @@
 * File Name         : my_check.c
 * Created By        : arn0f
 * Creation Date     : septembre 23th, 2015
-* Last Change       : septembre 24th, 2015 at 15:39:57
-* Last Changed By   : arn0f
+* Last Change       : septembre 25th, 2015 at 13:43:41
+* Last Changed By   : Arnaud Fredon
 * Purpose           : That file contain all the function that permit to check
 * 			which parameters are given
 *

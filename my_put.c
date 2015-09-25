@@ -3,8 +3,8 @@
 * File Name         : my_put.c
 * Created By        : arn0f
 * Creation Date     : septembre  2th, 2015
-* Last Change       : septembre 24th, 2015 at 15:39:57
-* Last Changed By   : arn0f
+* Last Change       : septembre 25th, 2015 at 14:00:16
+* Last Changed By   : Arnaud Fredon
 * Purpose           : That file contain all the function relative to puting a 
 * 			number or a string
 *
@@ -15,8 +15,12 @@
 #include "my_put.h"
 
 /*
- * That function permit to select one of the two dictionary existant for the
+ * Function: my_select_dict
+ * Purpose: That function permit to select one of the two dictionary existant for the
  * hexadecimal base. By default the dictionary returned is the uppercase one
+ * Input:
+ * 	dict: 0 or 1 (uppercase or lowercase dictionnary)
+ * Output: dictionary selected
  */
 char * my_select_dict(int dict)
 {
@@ -28,8 +32,14 @@ char * my_select_dict(int dict)
 }
 
 /*
- * That function permit a string of any int in the base choosen. That function
+ * Function: my_putnbr_base
+ * Purpose: That function permit a string of any int in the base choosen. That function
  * maximum base if only 16
+ * Input:
+ * 	nbr: integer to set in another base
+ *	base: integer of the base choosen
+ *	dict: 0 or 1 (uppercase or lowercase dictionnary)
+ * Output: return the string of the number in the base selected
  */
 char * my_putnbr_base(int nbr, int base, int dict)
 { 
@@ -49,8 +59,14 @@ char * my_putnbr_base(int nbr, int base, int dict)
 }
 
 /*
- * That function works like the previous one, but it's designed for unsigned int. In 
- * that sense, bigest unsigned int can works with.
+ * Function: my_put_big_number_base
+ * Purpose: That function works like the previous one, but it's designed for unsigned int. In 
+ * that sense, bigest unsigned int can works with
+ * Input:
+ * 	nbr: integer to set in another base (the integer will be converted in unsigned int)
+ * 	base: integer of the base choosen
+ * 	dict: 0 or 1 (uppercase or lowercase dictionnary)
+ * Output: return the string of the number in the base selected
  */
 char * my_put_big_nbr_base(unsigned int nbr, int base, int dict)
 { 
@@ -69,7 +85,11 @@ char * my_put_big_nbr_base(unsigned int nbr, int base, int dict)
 }
 
 /*
- * That function permit to write any string given on the standard output
+ * Function: my_puts
+ * Purpose: That function permit to write any string given on the standard output
+ * Input:
+ * 	s: the string to print on the standard output
+ * Output: 0 if no problem occured
  */
 int my_puts(const char *s)
 {

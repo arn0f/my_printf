@@ -3,8 +3,8 @@
 * File Name         : my_format.c
 * Created By        : arn0f
 * Creation Date     : septembre  2th, 2015
-* Last Change       : septembre 24th, 2015 at 14:55:45
-* Last Changed By   : arn0f
+* Last Change       : septembre 25th, 2015 at 13:44:08
+* Last Changed By   : Arnaud Fredon
 * Purpose           : That file contain all the function relative to formating
 * 			the string given
 *
