@@ -3,7 +3,7 @@
 * File Name         : my_format.c
 * Created By        : arn0f
 * Creation Date     : septembre  2th, 2015
-* Last Change       : septembre 25th, 2015 at 13:44:08
+* Last Change       : septembre 25th, 2015 at 14:47:38
 * Last Changed By   : Arnaud Fredon
 * Purpose           : That file contain all the function relative to formating
 * 			the string given
@@ -20,12 +20,12 @@
  * Function: format_chain
  * Purpose: That function permit to format a string keeping in mind flag, width, spe
  * Input:
- * 	str: string to format
- * 	flag: array containing all flag given
- * 	width: width to add (before or after the string)
- * 	type: specifier given for the string
- * 	spe: array containing all the specifier available
- * 	spe_size: size of the previous array
+ * 	char * str: string to format
+ * 	char * flag: array containing all flag given
+ * 	int width: width to add (before or after the string)
+ * 	char type: specifier given for the string
+ * 	char * spe: array containing all the specifier available
+ * 	int spe_size: size of the previous array
  * Output: string containing the final formated one
  */
 char * format_chain(char * str, char * flag, int width, char type, char * spe, int spe_size)
@@ -58,9 +58,10 @@ char * format_chain(char * str, char * flag, int width, char type, char * spe, i
  * Purpose: That function permit to generated the string with the padding
  * add on the left or on the right depend on what specified
  * Input:
- * 	str: string to format
- * 	left: 0 or 1, right or left padding
- * 	width: size of the padding wanted
+ * 	char * str: string to format
+ * 	int left: 0 or 1, right or left padding
+ * 	char pad: char of the padding hoped
+ * 	int width: size of the padding wanted
  * Output: The string with the padding wanted added
  */
 char * generate_padded_chain(char * str, int left, char pad, int width)
@@ -84,8 +85,8 @@ char * generate_padded_chain(char * str, int left, char pad, int width)
  * Function: generate_space
  * Purpose: The function permit to generate the padding wanted
  * Input:
- * 	pad: char of the padding wanted
- * 	width: size of the padding wanted
+ * 	char pad: char of the padding hoped
+ * 	int width: size of the padding wanted
  * Output: The padding generated
  */
 char * generate_space(char pad, int width)

@@ -3,8 +3,8 @@
 * File Name         : my_string.c
 * Created By        : arn0f
 * Creation Date     : septembre  3th, 2015
-* Last Change       : septembre 22th, 2015 at 23:23:16
-* Last Changed By   : arn0f
+* Last Change       : septembre 25th, 2015 at 15:00:01
+* Last Changed By   : Arnaud Fredon
 * Purpose           : That file containing all the function related on strings 
 * 			actions
 *
@@ -14,8 +14,13 @@
 #include "my_put.h"
 
 /*
- * That function permit to return the legnth (numbre of character) of any
+ * Function: my_strlen
+ * Purpose: That function permit to return the legnth (numbre of character) of any
  * string given
+ * Input: 
+ * 	char * s: string to return the length
+ * Output: 
+ * 	integer: the length of the string
  */
 int my_strlen(const char *s)
 {
@@ -30,8 +35,13 @@ int my_strlen(const char *s)
 }
 
 /*
- * That function permit to concatanate any string. The string returned is the
+ * Function: my_strcat
+ * Purpose: That function permit to concatanate any string. The string returned is the
  * concatanate one
+ * Input:
+ * 	char * dest: first string in concatenation
+ * 	char * src: second string in the concatenation
+ * Output: the resulting string of the concatenation
  */
 char * my_strcat(char *dest, char *src)
 {
@@ -57,7 +67,11 @@ char * my_strcat(char *dest, char *src)
 }
 
 /*
- * That function permit to convert a char into string
+ * Function: char_to_str
+ * Purpose: That function permit to convert a char into string
+ * Input:
+ * 	char src: char to set in str
+ * Output: the string of the char
  */
 char * char_to_str(char src)
 {
@@ -69,7 +83,11 @@ char * char_to_str(char src)
 }
 
 /*
- * That function permit to convert a string into char
+ * Function: str_to_char
+ * Purpose: That function permit to convert a string into char
+ * Input:
+ * 	char * str: string to get the first letter 
+ * Output: char of the first letter of the string
  */
 char str_to_char(char * str)
 {
@@ -78,10 +96,14 @@ char str_to_char(char * str)
 }
 
 /*
- * That function permit to return formated with the octal value of non-printable
- * character of the string given. For example, if the string given is "as'10'tek",
- * the returned string will be "as\012ek" with '\012' the octal value of the 
- * non-printable character '10' ('\n' in the ASCII table)
+ * Function: non_printable_octal
+ * Purpose: That function permit to return formated with the octal value of 
+ * non-printable character of the string given. For example, if the string given 
+ * is "as'10'tek", the returned string will be "as\012ek" with '\012' the octal 
+ * value of the non-printable character '10' ('\n' in the ASCII table)
+ * Input:
+ * 	char * str: string to get the extended format
+ * Output: extended string of the char given
  */
 char * non_printable_octal(char * str)
 {

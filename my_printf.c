@@ -3,8 +3,8 @@
 * File Name         : my_printf.c
 * Created By        : arn0f
 * Creation Date     : septembre  9th, 2015
-* Last Change       : septembre 24th, 2015 at 14:55:45
-* Last Changed By   : arn0f
+* Last Change       : septembre 25th, 2015 at 14:59:02
+* Last Changed By   : Arnaud Fredon
 * Purpose           : That file realize alle the function relative to 'my_printf'
 *
 *******************************************************************************/
@@ -30,8 +30,8 @@ char G_width [11] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '*'};
  * Function: get_specifier_chain
  * Purpose: Function permit to get the string associated to the parameter given
  * Input:
- * 	spe: character related to specifier
- * 	ap: argument pointer
+ * 	char spe: character related to specifier
+ * 	va_list ap: argument pointer
  * Output: string formated as specifier recommanded
  */
 char * get_specifier_chain(char spe, va_list ap)
@@ -56,8 +56,8 @@ char * get_specifier_chain(char spe, va_list ap)
  * Function: get_width
  * Purpose: Function return the decimal value related to char value given as width parameter
  * Input: 
- * 	width: old width
- * 	val: char value to add to width
+ * 	int width: old width
+ * 	char val: char value to add to width
  * Output: width with, the char width added 
  */
 int get_width(int width, char val)
@@ -74,7 +74,7 @@ int get_width(int width, char val)
  * called for parameter return string. It's a choice to permit to easily manipulate 
  * different flag, delimiter, precision, specifier...
  * Input:
- * 	format: string to works with
+ * 	char * format: string to works with
  * 	...: any other else parameter with any type wanted
  * Output: 0 if no problem 
  */
